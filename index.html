@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/treeMenu.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/menuTemp.js" ></script>
+		<script type="text/javascript" src="js/treeMenu.js" ></script>
+	</head>
+	<style>
+		#mainMenu{
+			width: 200px;
+			height: 100%;
+			background-color: royalblue;
+		}
+	</style>
+	<body>
+		<div id="mainMenu">
+			
+		</div>
+	</body>
+</html>
+<script>
+	var data = [
+		{
+			id:1,
+			text:'用户管理',
+			icon:'personalCenter',
+			children:[
+				{
+					id:2,
+					text:'用户信息管理',
+					url:'user/manage'
+				},
+				{
+					id:3,
+					text:'用户统计',
+					url:'user/statisc'
+				}
+			
+			]
+		}
+	]
+	var menu = new TreeMenu("#mainMenu",data);
+    menu.init();
+</script>

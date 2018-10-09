@@ -1,0 +1,26 @@
+.rotate180{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+    animation: rotate180 0.2s linear;
+}
+.rotate-90{
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+}
+.rotate90{
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+@-webkit-keyframes rotate180 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+

@@ -1,0 +1,95 @@
+.mainMenu{width: 100%;height: 100%;box-sizing:border-box}
+.mainMenu *{
+    box-sizing: border-box;
+}
+.mainMenu ul,.mainMenu ul li{
+    list-style: none;
+    padding: 0px;
+}
+.mainMenu li{
+    display: block;
+}
+
+.mainMenu .menu-parent .menu-title{
+    font-size: 16px;
+}
+.menu-children{
+    display:none;
+}
+.mainMenu .menu-child-title,.mainMenu .menu-parent .menu-title{
+    padding: 8px 5px;
+    height: 40px;
+    color: white;
+}
+.mainMenu .menu-child-title{
+    padding-left: 10px;
+    font-size: 14px;
+}
+.mainMenu .menu-parent .menu-title:hover{
+    background-color:#4878ef ;
+}
+.mainMenu .menu-child-title:hover{
+    background-color:#5f88ec ;
+}
+.mainMenu .menu-parent .menu-title,.mainMenu .menu-child-title,.mainMenu .menu-last {
+    cursor: pointer;
+}
+.mainMenu .menu-last{
+    height: 35px;
+    padding:10px 10px;
+}
+.mainMenu .menu-last:hover{
+    background-color: #7ca3fd;
+}
+.mainMenu .menu-arrow{
+    width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;float: right;margin-right: 10px;
+}
+.mainMenu .menu-arrow path{
+    fill: #8facf2;
+}
+
+.mainMenu .menu-parent .menu-child-title:hover  .mainMenu-icon path,
+.mainMenu .menu-last-icon svg path {
+    fill: #8facf2;
+}
+.mainMenu .menu-last:hover .menu-last-icon path,
+.mainMenu .menu-parent .menu-title:hover .menu-arrow path,
+.mainMenu .menu-parent .menu-title:hover .mainMenu-icon path,
+.mainMenu .menu-parent .menu-child-title:hover .mainMenu-icon path,
+.mainMenu .menu-child-title:hover .menu-arrow path{
+    fill: white;
+}
+.mainMenu .menu-last-icon svg{
+    width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;
+}
+.mainMenu .menu-last-icon{
+    position: relative;
+    margin-top: -2px;
+    margin-left: 18px;
+    margin-right: 10px;
+}
+.mainMenu .mainMenu-icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 3px;
+    float: left;
+}
+.mainMenu .mainMenu-icon svg path{
+    fill:#8facf2
+}
+.mainMenu .menu-parent.active{
+    background-color:rgba(74, 105, 204, 0.76);
+}
+.mainMenu .menu-child-parent.active{
+    background-color: #5a76bb;
+}
+.mainMenu .active>.menu-title>.mainMenu-icon svg path,
+.mainMenu .active>.menu-child-title>.mainMenu-icon  svg path,
+.mainMenu .active>.menu-child-title>.menu-last-icon svg path,
+.mainMenu .active>.menu-last-icon svg path
+{
+    fill:white
+}
